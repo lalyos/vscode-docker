@@ -10,4 +10,4 @@ RUN code-server --install-extension redhat.vscode-yaml \
 RUN cd /home/coder/.local/share/code-server/extensions/redhat.vscode-yaml-0.5.3 \
   && npm i
 
-CMD code-server -p 8080 -N -H
+CMD [ "-p", "8080" , "-N",  "-H" ]
