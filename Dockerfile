@@ -7,7 +7,7 @@ RUN sudo apt-get update \
 RUN code-server --install-extension redhat.vscode-yaml \
   --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 
-RUN cd /home/coder/.local/share/code-server/extensions/redhat.vscode-yaml-0.5.3 \
+RUN cd /home/coder/.local/share/code-server/extensions/redhat.vscode-yaml-0.6.1 \
   && npm i
 
 CMD [ "-p", "8080" , "-N",  "-H" ]
